@@ -1,0 +1,28 @@
+{
+    "name": "package-installer",
+    "version": "1.0.0",
+    "private": true,
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/index.js",
+            "import": "./dist/index.mjs",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup src/index.ts --dts --format cjs,esm --minify --splitting"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.21",
+        "execa": "^6.1.0",
+        "find-up": "^6.3.0",
+        "tsup": "^5.12.1",
+        "typescript": "^4.6.2"
+    }
+}

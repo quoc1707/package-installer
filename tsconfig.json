@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "sourceMap": true,
+        "declaration": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "lib": ["ESNext"],
+        "types": ["node"],
+        "moduleResolution": "node"
+    }
+}
